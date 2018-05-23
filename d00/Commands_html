@@ -1,0 +1,16 @@
+titles <H1> (biggest) - <H6> (smallest)
+paragraphs <p> I am first paragraph </p>
+links <a href="https://somesite">This is a link</a>
+images <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+HTML Buttons <button>Click me</button>
+HTML lists are defined with the <ul> (unordered/bullet list) or the <ol> (ordered/numbered list) tag, followed by <li> tags (list items):
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+The HTML <pre> element defines preformatted text.
+<pre>
+Text
+Text
+</pre>

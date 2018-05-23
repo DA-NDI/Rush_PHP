@@ -1,0 +1,78 @@
+body{
+    font-family:monospace;
+    font-size: 1.3vmin;
+    color: white;
+
+}
+
+a, a:hover, a:visited, a:focus{
+    color:inherit;
+      text-decoration: none;
+}
+
+ul.menu li{
+    text-align: center;
+    display: none;
+    padding:15% 15% 15% 15%;
+
+}
+#header {
+    width: 100%;
+    background-color: gray;
+    height: 8%;
+    position: absolute;
+}
+ul.menu li:first-child{
+    display: block;
+ 
+}
+.links:hover
+{
+    background-color: red;
+}
+ul.menu:hover li{
+    display:block;
+ 
+    background-color: rgb(32,32,32);
+}
+
+ul.menu:hover li:first-child{
+
+    background-color: red;
+    transition: 0.5s;
+    color: inherit;
+}
+
+ul.menu{
+       border-radius: 8px;
+    position: relative;
+    right: 30%;
+
+    background-color:black;
+    width:10%;
+    padding:0px;
+    float:right;
+}
+
+.menu li:hover .submenu {
+z-index:1;
+opacity:1;
+}
+.submenu {
+width:160%;
+padding:5% 5%;
+position:absolute;
+top:100%;
+
+left: 50%;
+opacity:0;
+transition: 0.5s;
+background:#2e2728;
+}
+.submenu li {
+display:block;
+font-size:1vmin;
+}
+.submenu li a {
+display:block;
+}

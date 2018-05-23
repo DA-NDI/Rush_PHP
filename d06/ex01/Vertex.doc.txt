@@ -1,0 +1,42 @@
+
+<- Vertex ----------------------------------------------------------------------
+Vertex is Class, that accept five parametres in array:
+
+-	x:  axis coordinate (type float)
+-	y:  axis coordinate (type float)
+-	z:  depth coordinate (type float)
+-   w:  homogeneous coordinate (type float)
+-	color: represented by an instance of the Color Class from the Color.class.php
+
+Vertex include boolean static attribute verbose. If you want to create new instance
+of Vertex, make it True. For Color Class see documentation in Color.doc.txt
+
+Example:
+Color::$verbose = False;
+Vertex::$verbose = True;
+$green = new Color( array( 'red' =>   0, 'green' => 255, 'blue' =>   0 ) );
+$unitX = new Vertex( array( 'x' => 1.0, 'y' => 0.0, 'z' => 0.0, 'color' => $green ) );
+
+Output:
+Vertex( x: 1.00, y: 0.00, z:0.00, w:1.00, Color( red:   0, green: 255, blue:   0 ) ) constructed
+
+x, y and z are mandatory. w and Color instance can be ommited. In case x, y or z
+are not present in array, script will stop. All attributes are private.
+Default value, if not present :
+	w == 1.0;
+	Color instance is white colour (0,0,0 in rgb);
+Example:
+$sqrA = new Vertex( array( 'x' => 0.0, 'y' => 0.0, 'z' => 0.0 ) );
+
+Vertex contain __to_String method:
+
+print( $unitX . PHP_EOL );
+print( $sqrA . PHP_EOL );
+Output:
+Vertex( x: 1.00, y: 0.00, z:0.00, w:1.00, Color( red:   0, green: 255, blue:   0 ) )
+Vertex( x: 0.00, y: 0.00, z:0.00, w:1.00 )
+
+This Class simply offers a coordinate encapsulation and
+provides reading and writing assessors for the corresponding attributes:
+set_x, set_y, set_z, set_w, set_color, get_x, get_y, get_z, get_w, get_color. 
+---------------------------------------------------------------------- Vertex ->

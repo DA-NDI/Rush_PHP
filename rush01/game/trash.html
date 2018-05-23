@@ -1,0 +1,14 @@
+
+var x = parseInt(this.x);
+var y = parseInt(this.y);
+console.log("x -----------" + x);
+console.log("y -----------" + y);
+if (this.id == "Player1"){
+var piu = document.getElementById('piu1');
+piu.setAttribute('onclick', "Laser(1, 'x', 'y');");
+}
+else if (this.id == "Player2")
+{
+	var piu = document.getElementById('piu2');
+	piu.setAttribute('onclick', "Laser(2, 'x', 'y');");
+}

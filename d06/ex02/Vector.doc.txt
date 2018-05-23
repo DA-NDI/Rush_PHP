@@ -1,0 +1,51 @@
+
+<- Vector ----------------------------------------------------------------------
+Vector is Class, that accept five parametres in array:
+
+-	x:  magnitude (type float)
+-	y:  magnitude (type float)
+-	z:  magnitude (type float)
+-   w:  homogeneous coordinate (type float)
+
+Vector include boolean static attribute verbose. If you want to create new instance
+of Vertex, make it True. For Vertex Class see documentation in Vertex.doc.txt
+
+Example:
+Vector::$verbose = True;
+
+$vtxO = new Vertex( array( 'x' => 0.0, 'y' => 0.0, 'z' => 0.0 ) );
+$vtxX = new Vertex( array( 'x' => 1.0, 'y' => 0.0, 'z' => 0.0 ) );
+$vtcXunit = new Vector( array( 'orig' => $vtxO, 'dest' => $vtxX ) );
+print( $vtcXunit . PHP_EOL );
+
+Output:
+Vector( x:1.00, y:0.00, z:0.00, w:0.00 ) constructed
+Vector( x:1.00, y:0.00, z:0.00, w:0.00 )
+Vector( x:1.00, y:0.00, z:0.00, w:0.00 ) destructed
+
+x, y and z are mandatory. w can be ommited. In case x, y or z
+are not present in array, script will stop. All attributes are private.
+Default value, if not present :
+	w == 0.0;
+
+This Class simply offers a coordinate encapsulation and
+provides reading and writing assessors for the corresponding attributes:
+set_x, set_y, set_z, set_w, set_color, get_x, get_y, get_z, get_w, get_color. 
+
+Vector Class have the following public methods:
+
+float magnitude() : returns the vector’s length (or "norm").
+- Vector normalize() : returns a normalized version of the vector. If the vector is
+already normalized, returns a fresh copy of the vector.
+
+- Vector add( Vector $rhs ) : returns the sum vector of both vectors.
+- Vector sub( Vector $rhs ) : returns the difference vector of both vectors.
+- Vector opposite() : returns the opposite vector.
+- Vector scalarProduct( $k ) : returns the multiplication of the vector with a
+scalar.
+- float dotProduct( Vector $rhs ) : returns the scalar multiplication of both vectors.
+- float cos( Vector $rhs ) : returns the angle’sAppendix cosine between both vectors.
+- Vector crossProduct( Vector $rhs ) : returns the cross multiplication of both
+vectors (right-hand mark!)
+
+---------------------------------------------------------------------- Vector ->

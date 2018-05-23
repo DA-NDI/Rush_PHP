@@ -1,0 +1,17 @@
+#!/usr/bin/php
+<?php
+date_default_timezone_set('Europe/Kiev');
+if (!$(fd = fopen("/var/run/utmpx", "r");
+$length = filesize("/var/run/utmpx");
+while ($s = fread($fd, 628))
+   $data[] = unpack("a256name/a4id/a32line/ipid/itype/i2time/a256host", $s);
+foreach ($data as $element)
+{
+   if ($element['type'] == 7)
+   {
+       echo $element["name"], " ";
+       echo $element["line"],  "  ";
+       echo date('M  j H:i', $element["time1"]), "\n";
+   }
+}
+?>

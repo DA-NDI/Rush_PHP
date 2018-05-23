@@ -1,0 +1,11 @@
+<-------------------Doc------------------------------------------------------------
+PlayerOne is Class for creating first player;
+It extends Class Player. See Player.doc.txt
+
+Later there will exist only one Class for multiple Players.
+Session will start and in __construct
+method $_SESSION variable array will get values of hp, shield and pp.
+Keys are the same.
+All other methods are same.
+
+---------------------------------------------------------------------------------->

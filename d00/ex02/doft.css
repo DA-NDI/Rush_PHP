@@ -1,0 +1,174 @@
+img {
+
+}
+.image_class {margin-left: auto;
+	display: inline-block;
+	text-align:center;
+}
+.images {text-align:center;}
+}
+.image_header {width: 100%;
+}
+#header_block {
+	border-radius: 9px;
+	background: rgb(144, 144, 144);
+
+	opacity: 1;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 10%;
+
+	background-color:rgb(144, 144, 144);
+	box-shadow: 7px 7px 5px;
+}
+.second_block {
+	position: relative;
+	top: 2%;
+}
+#header_center{
+	border-radius: 9px;
+	background: rgb(144, 144, 144);
+	width: 52%;
+	height: 35%;
+	box-shadow: 7px 7px 5px;
+	position: relative;
+	top :2%;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(./resources/cluster.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position: 50% 50%;
+	background-size: 97% 95%;
+}
+#header_left {
+	border-radius: 9px;
+	background: rgb(144, 144, 144);
+	width: 10%;
+	height: 76%;
+	box-shadow: 7px 7px 5px;
+	position: absolute;
+	top:0%;
+	left:12%;
+}
+#header_right {
+	border-radius: 9px;
+	background: rgb(144, 144, 144);
+	width: 10%;
+	position: absolute;
+	top:0%;
+	left: 78%;
+	height: 76%;
+	box-shadow: 7px 7px 5px;
+}
+#brick {
+	width: 80%;
+	position: absolute;
+	top:44%;
+	left: 10%;
+	height: 16%;
+	background-image: url(./resources/brick.jpg);
+	background-repeat: repeat;
+	background-position: 50% 50%;
+	background-size: 40% 40%;
+}
+#loupe {
+	width: 13%;
+	position: absolute;
+	bottom: 88%;
+	left: 75%;
+	height: 9%;
+	background-image: url(./resources/loupe.png);
+	background-position: 80% 50%;
+	background-repeat: no-repeat;
+	background-size: 110% 110%;
+}
+#left_images {
+	display: flex;
+	flex-direction: column;
+}
+.left_images {
+	height: 17%;
+	width: 45%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+}
+#right_images {
+	display: flex;
+	flex-direction: column;
+}
+.right_images {
+	height: 17%;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4%;
+}
+.close_images {
+	height: 14%;
+	width: 1.2%;
+	margin-right: -5px;
+	margin-left: 98.0%;
+	margin-bottom: 5.0%;
+	margin-top: 0.8%;
+
+}
+.bottom {
+	height: 10%;
+	width: 400px;
+	background-color: rgb(165, 252, 150);
+	border-radius: 10px;
+	position: absolute;
+	top: 40%;
+	left: 7%;
+	box-shadow: 7px 7px 5px;
+}
+.green_text {
+
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.green_top {
+	font-family: georgian;
+	margin-top: 10px;
+}
+#apple_link {
+	border-radius: 9px;
+	background: rgb(214, 70, 56);
+	width: 10%;
+	opacity: 0.0;
+	height: 23%;
+	position: absolute;
+	top:58%;
+	left:64%;
+
+}
+#ikea_link {
+	border-radius: 9px;
+	background: rgb(214, 70, 56);
+	width: 4%;
+	opacity: 0.0;
+	height: 20%;
+	position: absolute;
+	top:60%;
+	left:42%;
+
+}
+#link_42 {
+	background: rgb(214, 70, 56);
+	width: 25%;
+	opacity: 1;
+	height: 8%;
+	position: absolute;
+	top:1.2%;
+	left:11%;
+	background-image: url(./resources/day_of_the_42.png);
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+

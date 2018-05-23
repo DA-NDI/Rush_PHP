@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+#input {
+	height: 100px;
+	width: 100px;
+	background: grey;
+}
+#output {
+	height: 100px;
+	width: 100px;
+	background: grey;
+}
+#sign {
+	height: 100px;
+	width: 100px;
+	background: grey;
+}
+#submit {
+	height: 100px;
+	width: 100px;
+	background: grey;
+}
+
+		</style>
+		
+	</head>
+<body onload="update()">
+<div style="display: flex; justify-content:center;">
+	<div type="input" id ="input">
+	  <input type="text" name="input" value='' id="input_field"></input>
+	</div>
+	<div type="sign" id="sign">
+		 <select name="sign" id="sign_field">
+		 	<option value="+">+</option>
+		 	<option value="-">-</option>
+		 	<option value="*">*</option>
+		 	<option value="/">/</option>
+		 	<option value="%">%</option>
+		 </select>
+	</div>
+	<div type="output" id="output">
+		<input type="text" name="output" value='' id="output_field"></output>
+	</div>
+	<div type="output" id="submit">
+		<input type="submit" name="SUBMIT" value='Try me!' id="submit_field"></button>
+	</div>
+</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+
+
+			function update() {
+				setInterval(function(){alert('Please, use me...')}, 30000);
+			}
+			$("#submit_field").click(function() {
+			var sum = 0;
+			var first_oper = parseInt($("#input_field").val());
+			var second_oper = parseInt($("#output_field").val());
+			var sign = $("select#sign_field").val();
+			console.log(first_oper);
+			if (first_oper < 0 || second_oper < 0)
+			{
+				alert('Error :(');
+				return;
+			}
+			if ((second_oper == 0 && sign == '%') || (second_oper == 0 && sign == '/')) 
+			{
+				alert("It's over 9000!");
+				console.log("It's over 9000!");
+				return;
+			}
+			if (first_oper < 0 || second_oper < 0)
+			{
+				alert('Error :(');
+				return;
+			}
+			
+			if (sign == "+")
+				sum = first_oper + second_oper;
+			else if (sign == "-")
+				sum = first_oper - second_oper;
+			else if (sign == "*")
+				sum = first_oper * second_oper;
+			else if (sign == "/")
+				sum = first_oper / second_oper;
+			else if (sign == "%")
+				sum = first_oper % second_oper;
+			alert(sum);
+    		console.log(sum);
+		});
+		
+		</script>
+	
+
+</body>
+</html>

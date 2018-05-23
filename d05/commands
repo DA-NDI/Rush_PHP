@@ -1,0 +1,32 @@
+INSERT INTO ft_table1 (login, groupe, date_de_creation)
+	   		VALUES ('loki', 'staff', '2013-05-01')
+				   , ('scadoux', 'student', '2014-01-01')
+				   , ('chap', 'staff', '2011-04-27')
+				   , ('bambou', 'staff', '2014-03-01')
+				   , ('fantomet', 'staff', '2010-04-03');
+
+
+alias mysql='~/Library/Containers/MAMP/mysql/bin/mysql'
+
+
+mysql -uavolgin -p   // show shoto
+show databases; // view databases
+use <database_name>; //use it. for ex. sql42
+show tables; //
+select * from film; //select all from film table
+select name, name from film // select field name/ in two columns
+describe film; // get all info about fields or desc film (the same)
+select id_film, title from film; // select some fields
+select id_film, title from film limit 10; // disp. first ten only
+SELECT id_film, title FROM film ORDER BY title DESC LIMIT 10; // sort ascii last ten (desc for descending) 
+SELECT id_film, title year_prod FROM film WHRE year_prod > 2005; // sort ascii year more than 2005//
+SELECT id_film, title year_prod FROM film WHRE year_prod > 2005; // sort ascii year more than 2005 AND year_prod < 2007 ORDER BY titre DESC  LIMIT 10//
+
+SELECT count(*) FROM views ORDER by table_catalog; // count all fields in
+table view
+SELECT max(table_catalog) FROM views; // select max
+JOINS:
+SELECT * FROM film INNER JOIN genre ON film.id_genre = genre.id_genre;
+
+
+

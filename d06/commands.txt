@@ -1,0 +1,2 @@
+$this // this is variable to call attribute in the constructor
+public _private __construct // _ for private, __ for special, no for public

@@ -1,0 +1,43 @@
+New var
+
+public function mult( Matrix $rhs ) {
+		//$matr3 = new Matrix(array('preset' => "IDENTITY"));
+		$matr3 = array(
+  				array(1.0, 0.0, 0.0, 0.0),
+  				array(0.0, 1.0, 0.0, 0.0),
+  				array(0.0, 0.0, 1.0, 0.0),
+  				array(0.0, 0.0, 0.0, 1.0));
+        $r=count($this->_matrix);
+        $c=count($rhs->_matrix[0]);
+        $p=count($rhs->_matrix);
+        for ($i=0;$i< $r;$i++){
+            for($j=0;$j<$c;$j++){
+                $matr3[$i][$j]=0;
+            for($k=0;$k<$p;$k++){
+                $matr3[$i][$j]+=$this->_matrix[$i][$k]*$rhs->_matrix[$k][$j];
+            }
+            }
+        }
+       $matr = new Matrix(array('preset' => "IDENTITY"));
+       $matr->_matrix = $matr3;
+    return($matr);
+	}
+
+
+Old var:
+
+public function mult( Matrix $rhs ) {
+		$matr3 = new Matrix(array('preset' => "IDENTITY"));
+        $r=count($this->_matrix);
+        $c=count($rhs->_matrix[0]);
+        $p=count($rhs->_matrix);
+        for ($i=0;$i< $r;$i++){
+            for($j=0;$j<$c;$j++){
+                $matr3->_matrix[$i][$j]=0;
+            for($k=0;$k<$p;$k++){
+                $matr3->_matrix[$i][$j]+=$this->_matrix[$i][$k]*$rhs->_matrix[$k][$j];
+            }
+            }
+        }
+    return($matr3);
+	}

@@ -1,0 +1,3 @@
+echo "Hello\n";
+print ("Hello!\n");
+

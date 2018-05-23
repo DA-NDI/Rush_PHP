@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+#balloon {
+	height: 200px;
+	width: 200px;
+	background: red;
+	border-radius: 500px;
+}
+		</style>
+		
+	</head>
+<body>
+	<div onclick='ChangeSize()' onmouseout="OutFunc()" ; id ="balloon" style="height:200px;width:200px;color:red;"></div>
+	<script>
+			var colors = new Array('red', 'green', 'blue');
+			var index = 1002;
+			function ChangeSize()
+			{
+			var el = document.getElementById("balloon");
+    		var height = el.offsetHeight;
+    		if (height <= 420){
+	    		var newHeight = height + 10;
+    		}
+    		else
+    			var newHeight = 200;
+       		var width = el.offsetWidth;
+    		if (width <= 420){
+	    		var newWidth = width + 10;
+    		}
+    		else
+	    		var newWidth = 200;
+    		el.style.height = newHeight + 'px';
+    		el.style.width = newWidth + 'px';
+    		index++;
+			el.style.background = colors[index % 3];
+		}
+		function OutFunc()
+		{
+			var el = document.getElementById("balloon");
+    		var height = el.offsetHeight;
+    		
+    		var width = el.offsetWidth;
+    		if (width > 200 && height > 200){
+    			var newHeight = height - 5;
+    			var newWidth = width - 5;
+    			el.style.height = newHeight + 'px';
+	    		el.style.width = newWidth + 'px';
+
+    		}
+   			index--;
+			el.style.background = colors[index % 3];
+		}
+		</script>
+	
+
+</body>
+</html>

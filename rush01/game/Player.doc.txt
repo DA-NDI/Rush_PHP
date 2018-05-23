@@ -1,0 +1,31 @@
+<-------------------Doc------------------------------------------------------------
+Player is Class for creating player;
+It includes construct method, set and get for
+4 attributes:
+
+Hull points (hp): life points of the ship. If those fall to 0, the ship is destroyed. 5
+points is a good average for a mid-sized ship.
+Engine power (pp): The engine power gives the ship a number of points that the
+players will be able to attribute to different actions when activating a ship
+depending on situations. Those will be "power points" shortened with PP.
+Those points can be spent to make the ship go faster, strengthen its shields
+or use its weapons. This attribution is done during the order phase which will
+be detailed later. 10PP represents an average for a basic ship and will be the
+most common value. The biggest vessels can go up to 15PP.
+Speed : Maximum number of cells that the ship can move each turn. This specificity
+can be raised with the support of PP. A scout who is faster, can move
+up to 20 cells. A big ass one can only go 10.
+Shield (shield): Number of damage points that a ship can endure before losing his hull
+points. Worth 0 upon activation of the ship and can receive PP points.
+Weapons: List of weapons that each ship owns, generally one or two, sometimes
+more for the really big ships. Each weapon needs PP to function. Each PP
+attributed to a weapon will allow it to raise its efficiency shooting factor for
+that turn. A section will be dedicated to the weapons and their specificities.
+
+They are:
+get_hp, get_pp, get_shield, set_hp, set_pp, set_shield;
+Session is started.
+Class is destroyed in the end.
+If you want see output of construct and destruct, set static var verbose to true.
+
+---------------------------------------------------------------------------------->

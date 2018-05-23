@@ -1,0 +1,41 @@
+
+table{
+
+ width:100%;
+ height:10%;
+ background-color:black;
+ background-image: url("https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2016/thephilosoph.jpg");
+ background-repeat: repeat;
+ background-position: center;
+
+
+
+
+ background-position: 0% 0%;
+ background-size: 25% 25%;
+ border-spacing: 5px;
+ border:1px solid gray;
+ padding: 20px;}
+ .s_element {background-color:Tomato;}
+ .p_element {background-color:Orange;}
+ .d_element {background-color:DodgerBlue;}
+ .f_element {background-color:MediumSeaGreen;
+   width:7%;}
+   td{
+    border-radius:6px;
+    -moz-border-radius:6px;
+    border:1px solid gray;}
+    .name {
+     text-align:center;
+     color: rgb(230,230,230);
+     font-weight: bold;
+     font-size: 2vmin;
+   }
+   .atomic_weight {
+     text-align:right;
+     font-size: 1vmin;
+   }
+   .empty_el {background-color:black;
+     width:7%;}
+     .number {font-size: 1vmin}
+

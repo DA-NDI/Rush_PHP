@@ -1,0 +1,174 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-image: url("../resources/background.jpg") ;
+	background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(0, 0, 0);
+}
+#motto
+{
+	width:87%;
+	position: absolute;
+    font: 24px Dosics;
+    text-align: center;
+    padding-top: 25px;
+	height: 75px;
+	color: white;
+	opacity: 0.7;
+}
+#form
+{
+	position: relative;
+	background-color: #224866;
+	padding: 30px !important;
+	margin: 0px auto;
+	width: 400px;
+	height: 450px;
+	margin-left: 38vw;
+	margin-top: 127px;
+	padding: 5px;
+}
+
+#fields
+{
+	position: absolute;
+	margin-top: 175px;
+	width: 70%;
+}
+
+input[type=submit]
+{
+	height: 60px;
+    background-color: #447FB4;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 8px 0px;
+    cursor: pointer;
+}
+input[type=submit]:hover
+{
+	background-color: #386F9E;
+}
+
+input[type=text], input[type=password]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font: 18px Sans-serif;
+    display:block;
+    border:none;
+    border-bottom:1px solid #ccc ;
+}
+
+#callofgame
+{
+	margin-top: 70px;
+	text-align: center;
+	color: white;
+}
+
+#callofgame a
+{
+	text-align: center;
+	color: #50AFF0;
+    text-decoration: none;    
+}
+
+#callofgame a:hover
+{
+	color: #437CB4;
+    text-decoration: none;
+}
+
+label > input
+{
+  visibility: hidden;
+  position: absolute;
+}
+
+label > input + img
+{
+  cursor:pointer;
+  border:1px solid transparent;
+}
+
+label > input:checked + img
+{
+  border:1px solid white;
+}
+
+#start_sw
+{
+
+	margin-left: 15%;
+	position: absolute;
+	margin-top: 200px;
+}
+
+#chat_sw
+{
+	margin-left: 70%;
+	position: absolute;
+	margin-top: 200px;
+}
+
+#logout_sw
+{
+	position: absolute;
+	width: 300px;
+	height: 50px;
+	font: 36px Sans-serif;
+	color: white;
+	background-color: #447FB4;
+}
+
+#logout_sw a
+{
+	color: white;
+	opacity: 0.7;
+    text-decoration: none; 
+}
+
+#logout_sw a:hover
+{
+    text-decoration: none;
+}
+
+#al_rads label
+{
+	float: left;
+	display: block;
+	margin-left: 10%;
+}
+
+#al_rads img
+{
+	margin-left: -10%;
+}
+
+form
+{
+	width: 400px;
+}
+
+#subm
+{
+	width: 100%;
+}
+
+#poloska
+{
+	margin-left: 9.3%;
+}
